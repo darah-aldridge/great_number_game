@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600&display=swap');
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    text-align: center;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;   
+    font-size: 20px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#container{
+    display: flex;
+    flex-flow:column;
+    justify-content: center;
+    align-items: center;
+    align-content:center;
+}
+input[name=guess]{
+    width: 100%;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;   
+    font-size: 18px;
+    background-color: #973f93;
+    margin-top: 10px;
+}
+input[name=play_again]{
+    width: 100%;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;   
+    font-size: 18px;
+    background-color: #1d2720;
+    margin-top: 10px;
+}
+#again_button{
+    width: 100%;
+    cursor: pointer;
+}
+#guess{
+    width: 100%;
+    cursor: pointer;
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(65, 65, 65);
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(199, 199, 199);
+    opacity: 1;
+}
+#label{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;   
+    font-size: 24px;
+    text-align: center;
+}
+#form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(240, 240, 240);
+    padding: 50px;
+    width: 400px;
+    text-align: center;
+}
+#message{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    background-color: #C8CC95;
+    width: 400px;
+}
+#rules{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(209, 209, 209);
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 400px;
+}
+

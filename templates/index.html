@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/style.css') }}">
+    <style>
+        #status{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--color);
+            padding: 50px;
+            width: 100%;
+        }
+    </style>
+    <title>Counter</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Welcome to the Great Number Game!</h1>
+        <div id="message">
+            <div id="rules">
+                <p>I am thinking of a number between 1 and 100</p>
+            </div>
+            <div id="status" style="--color: {{ color }}">
+                <h2>{{message}}</h2>
+            </div>
+        </div>
+        <div id="form">
+            <form action='/guess' method='post'>
+                <label for="guess_box" id="label">Take a Guess:</label>
+                <input type="text" name="user_guess">
+                <input type="submit" name="guess" value="Guess" id="guess">
+            </form>
+            <a href="/play_again" id="again_button">
+                <input type="submit" name="play_again" value="Play Again">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
